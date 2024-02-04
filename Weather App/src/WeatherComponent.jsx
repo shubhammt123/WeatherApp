@@ -52,7 +52,7 @@ function WeatherComponent({weather , timezoneOffset , cityName , setCityName , s
 
   return (
     <div className="w-full h-full flex">
-            <div className="w-3/5 bg-location bg-cover bg-no-repeat h-full rounded-l-lg flex flex-col justify-between">
+            <div className={`w-3/5 ${Math.floor(weather.weather[0].id / 100) === 2 ? 'bg-thunderstorm' : Math.floor(weather.weather[0].id / 100) === 3 ? 'bg-drizzle' : Math.floor(weather.weather[0].id / 100) === 5 ? 'bg-rain' : Math.floor(weather.weather[0].id / 100) === 6 ? 'bg-snow' : Math.floor(weather.weather[0].id / 100) === 7 ? 'bg-haze' : weather.weather[0].id === 800 ? 'bg-clear' :'bg-cloud'} bg-cover bg-no-repeat h-full rounded-l-lg flex flex-col justify-between`}>
               <div className="flex justify-end">
                 <p className="text-2xl font-bold p-2">
                   {weather.name} | {weather?.sys?.country}
