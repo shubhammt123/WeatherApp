@@ -8,7 +8,13 @@ export default {
     extend: {
       backgroundImage: {
         'weather': "url('src/assets/bg.jpg')",
-        'location': "url('src/assets/location.jpg')"
+        'haze': "url('src/assets/location.jpg')",
+        'cloud' : "url('src/assets/cloud.jpg')",
+        'thunderstorm' : "url('src/assets/thunderstrom.jpg')",
+        'drizzle' : "url('src/assets/drizzle.jpg')",
+        'rain' : "url('src/assets/rain.jpg')",
+        'snow' : "url('src/assets/snow.jpg')",
+        'clear' : "url('src/assets/location.jpg')"
       }
     },
   },
